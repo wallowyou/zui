@@ -5,10 +5,12 @@
         <text
           class="pre-year iconfont icon-a-doubleleft2x"
           @click="previousYear"
+          v-show="showYearControl"
         ></text>
         <text
           class="pre-month iconfont icon-a-left2x"
           @click="previousMonth"
+          v-show="showMonthControl"
         ></text>
       </view>
       <view class="z-calendar-center">
@@ -18,10 +20,12 @@
         <text
           class="next-month iconfont icon-a-right2x"
           @click="nextMonth"
+          v-show="showMonthControl"
         ></text>
         <text
           class="next-year iconfont icon-a-doubleright2x"
           @click="nextYear"
+          v-show="showYearControl"
         ></text>
       </view>
     </view>
